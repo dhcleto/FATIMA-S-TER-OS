@@ -90,11 +90,6 @@ main {
     align-items: center;
 }
 
-.qr-code {
-    max-width: 200px;
-    margin-bottom: 20px;
-}
-
 button {
     background-color: #007BFF;
     color: #fff;
