@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - FATIMA'S TERÇOS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Reset Padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        h1, h4 {
+            color: #333;
+        }
+
+        /* Botões estilizados */
+        .contact-button {
+            display: inline-block;
+            background-color: #B8860B; /* Dourado escuro */
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #8B6508; /* Dourado mais intenso */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .pix-button {
+            background-color: #2E5E4E; /* Verde musgo */
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .pix-button:hover {
+            background-color: #8B6508; /* Dourado escuro no hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo2.jpg" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Nossa História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria dos Terços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Contato -->
+    <section class="container my-5">
+        <h1 class="text-center mb-4">Entre em Contato</h1>
+        <div class="row text-center">
+            <!-- WhatsApp -->
+            <div class="col-md-6 mb-4">
+                <h4>WhatsApp</h4>
+                <p>Envie-nos uma mensagem rápida pelo WhatsApp:</p>
+                <a href="https://api.whatsapp.com/send?phone=5511996729012" target="_blank" class="contact-button">
+                    <i class="bi bi-whatsapp"></i> Iniciar Conversa
+                </a>
+            </div>
+
+            <!-- PIX -->
+            <div class="col-md-6 mb-4">
+                <h4>Doações via PIX</h4>
+                <p>Chave PIX: <strong>11996729012</strong></p>
+                <button class="pix-button" onclick="copyPix()">Copiar Chave PIX</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FATIMA'S TERÇOS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Copiar chave PIX
+        function copyPix() {
+            navigator.clipboard.writeText("11996729012").then(() => {
+                alert("Chave PIX copiada com sucesso!");
+            }).catch(err => {
+                alert("Erro ao copiar chave PIX.");
+                console.error(err);
+            });
+        }
+    </script>
+</body>
+</html>
