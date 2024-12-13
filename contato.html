@@ -51,7 +51,7 @@
         }
 
         /* Botões estilizados */
-        .contact-button {
+        .btn-custom {
             display: inline-block;
             background-color: #B8860B; /* Dourado escuro */
             color: #fff;
@@ -64,33 +64,25 @@
             transition: all 0.3s ease;
         }
 
-        .contact-button:hover {
+        .btn-custom:hover {
             background-color: #8B6508;
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
-        .pix-button {
-            display: inline-block;
-            background-color: #B8860B; /* Dourado escuro */
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
+        /* Seção especial */
+        .group-section {
+            background-color: #FFF8DC;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 30px;
         }
 
-        .pix-button:hover {
-            background-color: #8B6508;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-        }
-       /* Footer */
-       footer {
-            background-color: #000000; /* Preto absoluto */
+        /* Footer */
+        footer {
+            background-color: #000000; 
             color: #fff;
             padding: 30px 0;
         }
@@ -101,32 +93,13 @@
         }
 
         footer .footer-links a {
-            color: #B8860B; /* Dourado escuro */
+            color: #B8860B; 
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         footer .footer-links a:hover {
-            color: #fff; /* Branco no hover */
-        }
-
-        
-        /* Ajuste do botão hamburguer */
-        .navbar-toggler {
-            border: 2px solid #fff; /* Borda branca */
-            border-radius: 5px;
-            padding: 5px 10px; /* Ajusta o tamanho */
-            transition: all 0.3s ease;
-        }
-
-        .navbar-toggler-icon {
-            background-color: transparent;
-            filter: invert(100%); /* Torna o ícone branco */
-        }
-
-        .navbar-toggler:hover {
-            background-color: #B8860B; /* Fundo dourado no hover */
-            border-color: #B8860B;
+            color: #fff; 
         }
     </style>
 </head>
@@ -143,15 +116,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="historia.html">Nossa História</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">Galeria dos Terços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contato.html">Contato</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">Nossa História</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria dos Terços</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://chat.whatsapp.com/HN3pIbhQvCVEzhs41ztbpw" target="_blank">Terço da Alegria</a></li>
                     </ul>
                 </div>
             </div>
@@ -159,13 +127,13 @@
 
         <!-- Conteúdo Principal -->
         <main class="container my-5">
-            <h1 class="text-center mb-4">Entre em Contato</h1>
+            <h1 class="text-center mb-5">Entre em Contato</h1>
             <div class="row text-center">
                 <!-- WhatsApp -->
                 <div class="col-md-6 mb-4">
                     <h4>WhatsApp</h4>
                     <p>Envie-nos uma mensagem rápida pelo WhatsApp:</p>
-                    <a href="https://api.whatsapp.com/send?phone=5511996729012" target="_blank" class="contact-button">
+                    <a href="https://api.whatsapp.com/send?phone=5511996729012" target="_blank" class="btn btn-custom">
                         Iniciar Conversa
                     </a>
                 </div>
@@ -174,32 +142,39 @@
                 <div class="col-md-6 mb-4">
                     <h4>Doações via PIX</h4>
                     <p>Chave PIX: <strong>11996729012</strong></p>
-                    <button class="pix-button" onclick="copyPix()">Copiar Chave PIX</button>
+                    <button class="btn btn-custom" onclick="copyPix()">Copiar Chave PIX</button>
                 </div>
             </div>
+
+            <!-- Grupo Terço da Alegria -->
+            <section class="group-section">
+                <h3>Participe do Grupo Terço da Alegria</h3>
+                <p class="mb-4">
+                    Todos os dias, às 17h30, nos reunimos para rezar o terço. Junte-se a nossa comunidade de fé e oração no WhatsApp!
+                </p>
+                <a href="https://chat.whatsapp.com/HN3pIbhQvCVEzhs41ztbpw" target="_blank" class="btn btn-custom">
+                    Entrar no Grupo
+                </a>
+            </section>
         </main>
 
-         <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>&copy; 2024 FATIMA'S TERÇOS. Todos os direitos reservados.</p>
-            <div class="footer-links mt-2">
-                <a href="historia.html" class="mx-2">Nossa História</a> |
-                <a href="galeria.html" class="mx-2">Galeria</a> |
-                <a href="contato.html" class="mx-2">Contato</a>
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>&copy; 2024 FATIMA'S TERÇOS. Todos os direitos reservados.</p>
+                <div class="footer-links mt-2">
+                    <a href="historia.html" class="mx-2">Nossa História</a> |
+                    <a href="galeria.html" class="mx-2">Galeria</a> |
+                    <a href="contato.html" class="mx-2">Contato</a> |
+                    <a href="https://chat.whatsapp.com/HN3pIbhQvCVEzhs41ztbpw" class="mx-2" target="_blank">Terço da Alegria</a>
+                </div>
             </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        </footer>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Copiar chave PIX
         function copyPix() {
             navigator.clipboard.writeText("11996729012").then(() => {
                 alert("Chave PIX copiada com sucesso!");
