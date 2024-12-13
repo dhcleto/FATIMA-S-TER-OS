@@ -28,12 +28,12 @@
         }
 
         .navbar-custom .navbar-nav .nav-link {
-            color: #ddd; /* Texto cinza claro */
+            color: #ddd; 
             transition: color 0.3s ease;
         }
 
         .navbar-custom .navbar-nav .nav-link:hover {
-            color: #fff; /* Branco no hover */
+            color: #fff; 
         }
 
         /* Hero Section */
@@ -46,7 +46,7 @@
 
         /* Footer */
         footer {
-            background-color: #000000; /* Preto absoluto */
+            background-color: #000000; 
             color: #fff;
             padding: 30px 0;
         }
@@ -57,32 +57,45 @@
         }
 
         footer .footer-links a {
-            color: #B8860B; /* Dourado escuro */
+            color: #B8860B; 
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         footer .footer-links a:hover {
-            color: #fff; /* Branco no hover */
+            color: #fff; 
         } 
 
-        
         /* Ajuste do botão hamburguer */
         .navbar-toggler {
-            border: 2px solid #fff; /* Borda branca */
+            border: 2px solid #fff;
             border-radius: 5px;
-            padding: 5px 10px; /* Ajusta o tamanho */
+            padding: 5px 10px;
             transition: all 0.3s ease;
         }
 
         .navbar-toggler-icon {
             background-color: transparent;
-            filter: invert(100%); /* Torna o ícone branco */
+            filter: invert(100%);
         }
 
         .navbar-toggler:hover {
-            background-color: #B8860B; /* Fundo dourado no hover */
+            background-color: #B8860B;
             border-color: #B8860B;
+        }
+        
+        /* Botão personalizado */
+        .btn-custom {
+            background-color: #B8860B;
+            color: #fff;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #8B6508; 
+            color: #fff;
+            transform: translateY(-3px);
         }
     </style>
 </head>
@@ -90,7 +103,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/logo3.jpeg" alt="Logo" class="logo" style="width: 100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -98,15 +111,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="historia.html">Nossa História</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galeria dos Terços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">Nossa História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria dos Terços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://chat.whatsapp.com/HN3pIbhQvCVEzhs41ztbpw" target="_blank">Terço da Alegria</a></li>
                 </ul>
             </div>
         </div>
@@ -117,7 +125,18 @@
         <div class="container">
             <h1 class="display-4 mb-4">FATIMA'S TERÇOS</h1>
             <p class="lead">Espalhando fé e devoção através de cada peça única.</p>
-            <div class="row">
+            
+            <!-- Bloco do convite ao grupo -->
+            <div class="my-5">
+                <h3>Participe do Terço da Alegria</h3>
+                <p class="mb-4">Todos os dias, às 17h30, nos reunimos para rezar o terço no WhatsApp. Junte-se a nossa comunidade de fé e oração!</p>
+                <a href="https://chat.whatsapp.com/HN3pIbhQvCVEzhs41ztbpw" target="_blank" class="btn btn-custom">
+                    Entrar no Grupo do Terço
+                </a>
+            </div>
+
+            <!-- Imagens separadas do texto por um margin-top adicional -->
+            <div class="row mt-5">
                 <div class="col-md-4 mb-3">
                     <img src="img/terçoprincipal.jpg" alt="Terço Principal" class="img-fluid">
                 </div>
@@ -138,7 +157,8 @@
             <div class="footer-links mt-2">
                 <a href="historia.html" class="mx-2">Nossa História</a> |
                 <a href="galeria.html" class="mx-2">Galeria</a> |
-                <a href="contato.html" class="mx-2">Contato</a>
+                <a href="contato.html" class="mx-2">Contato</a> |
+                <a href="https://chat.whatsapp.com/HN3pIbhQvCVEzhs41ztbpw" class="mx-2" target="_blank">Terço da Alegria</a>
             </div>
         </div>
     </footer>
